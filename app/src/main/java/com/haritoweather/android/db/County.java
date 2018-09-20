@@ -3,10 +3,14 @@ package com.haritoweather.android.db;
 import org.litepal.crud.DataSupport;
 
 public class County extends DataSupport{
+
     private int id;
-    private String countyName;  //记录县的名字
-    private String weatherId;   //记录县对应的天气id
-    private int cityid;         //记录当前县所属市的id
+
+    private String countyName;
+
+    private String weatherId;
+
+    private int cityId;
 
     public int getId() {
         return id;
@@ -32,11 +36,11 @@ public class County extends DataSupport{
         this.weatherId = weatherId;
     }
 
-    public int getCityid() {
-        return cityid;
+    public int getCityId() {
+        return cityId;
     }
 
-    public void setCityid(int cityid) {
-        this.cityid = cityid;
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 }
